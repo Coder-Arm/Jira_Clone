@@ -29,6 +29,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 4px;
+  padding: 4px;
 }
 .three-dot {
   visibility: hidden;
