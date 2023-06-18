@@ -4,7 +4,7 @@
   font-family: "Rubik", sans-serif;
 }
 body {
-  background-image: radial-gradient(
+  background: radial-gradient(
     farthest-corner circle at 100% 0%,
     #00dfff -17% -17%,
     #8c00ea 100%
@@ -14,10 +14,13 @@ body {
   min-height: 40vh;
   padding: 3rem;
   display: flex;
+  gap: 2rem;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .box {
-  width: 25%;
+  width: 280px;
+  min-height: 20vh;
   padding: 10px;
   background-color: white;
   border-radius: 8px;
