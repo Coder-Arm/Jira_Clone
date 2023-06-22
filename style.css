@@ -9,6 +9,7 @@ body {
     #00dfff -17% -17%,
     #8c00ea 100%
   );
+  min-height: 100vh;
 }
 #container {
   min-height: 40vh;
@@ -38,6 +39,20 @@ body {
 .three-dot {
   visibility: hidden;
   cursor: pointer;
+  position: relative;
+}
+.three-dot-menu {
+  position: absolute;
+  left: -20px;
+  top: 28px;
+  padding: 2px;
+  border-radius: 4px;
+  color: rgb(40, 40, 40);
+  box-shadow: grey 0px 0.4px 1px;
+}
+.three-dot-menu .clear-btn {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
 }
 .top:hover {
   background-color: #ebecf0;
@@ -136,7 +151,7 @@ form > button {
   padding: 8px;
   box-shadow: 1px 1px 8px;
 }
-.card .title {
+card .title {
   font-size: 16px;
   font-weight: 500;
 }
@@ -157,4 +172,9 @@ form > button {
   text-align: center;
   background-color: orange;
   border-radius: 50%;
+}
+@media screen and (max-width: 970px) {
+  .modal > form {
+    width: 45vw;
+  }
 }
