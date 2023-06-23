@@ -2,14 +2,18 @@ const createIssueBtn = document.getElementById("create-issue");
 const box1 = document.getElementsByClassName("box")[0];
 
 const threeDot = document.getElementsByClassName("three-dot");
-for(let dot of threeDot){
-dot.addEventListener("mouseover",(event) => {
+     let threeDotArr = Array.from(threeDot);
+     console.log(threeDotArr);
+      threeDotArr.forEach((dot) => {
+      dot.addEventListener("click",(event) => {
        const menu = document.createElement("div");
        menu.className = "three-dot-menu";
-       menu.innerHTML = `<div class = "clear-btn">Clear</div>`
+       menu.innerHTML = `<button class = "clear-btn"><span>Clear</span><span class="material-icons" style = "color : red">
+       delete_outline
+       </span></button>`
        dot.appendChild(menu);
 })
-};
+});
 
 
 

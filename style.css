@@ -43,16 +43,27 @@ body {
 }
 .three-dot-menu {
   position: absolute;
-  left: -20px;
+  left: -46px;
   top: 28px;
-  padding: 2px;
+  overflow: hidden;
   border-radius: 4px;
   color: rgb(40, 40, 40);
-  box-shadow: grey 0px 0.4px 1px;
+  box-shadow: grey 0px 0.6px 1px;
 }
 .three-dot-menu .clear-btn {
+  background-color: white;
+  width: 75px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
   font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   font-family: "Rubik", sans-serif;
+}
+.three-dot-menu .clear-btn:hover {
+  background-color: rgb(255, 188, 188);
 }
 .top:hover {
   background-color: #ebecf0;
